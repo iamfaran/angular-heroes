@@ -1,0 +1,25 @@
+.hero-item {
+  max-width: 300px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+button {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  border: none;
+  padding: 0;
+  align-items: center;
+}
+
+.badge {
+  background-color: red;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  padding: 5px;
+  background-color: #405061;
+  color: #fff;
+}
