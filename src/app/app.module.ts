@@ -3,9 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
+import { HeroComponent } from './hero/hero.component';
 
 @NgModule({
-  declarations: [AppComponent, HeroesComponent],
+  declarations: [AppComponent, HeroesComponent, HeroComponent],
   imports: [
     BrowserModule,
     FormsModule, // <-- import the FormsModule before binding with [(ngModel)]
