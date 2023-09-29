@@ -11,4 +11,9 @@ export class HeroComponent {
   // store it in a local hero property
   @Input() hero!: Hero;
   constructor() {}
+
+  onHeroClick() {
+    // print hero object to console
+    console.log(this.hero);
+  }
 }
