@@ -1,5 +1,5 @@
 <li class="hero-item">
-  <button (click)="onHeroClick()" type="button">
+  <button (click)="onHeroClick(hero)" type="button">
     <div class="badge">
       <span>{{ hero.id }}</span>
     </div>
@@ -8,3 +8,12 @@
     </div>
   </button>
 </li>
+
+<div *ngIf="selectedHero">
+  <h2>{{ selectedHero.name | uppercase }} Details</h2>
+  <div>id: {{ selectedHero.id }}</div>
+  <div>
+    <label for="hero-name">Hero name: </label>
+    <input id="hero-name" [(ngModel)]="selectedHero.name" placeholder="name" />
+  </div>
+</div>

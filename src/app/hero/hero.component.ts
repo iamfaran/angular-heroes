@@ -10,10 +10,14 @@ export class HeroComponent {
   // receive hero object from parent component
   // store it in a local hero property
   @Input() hero!: Hero;
-  constructor() {}
+  // selected hero can be undefined or a hero object
+  selectedHero?: Hero;
+  constructor() {
+    console.log(this);
+  }
 
-  onHeroClick() {
+  onHeroClick(hero: Hero): void {
     // print hero object to console
-    console.log(this.hero);
+    this.selectedHero = hero;
   }
 }
