@@ -7,4 +7,8 @@ import { Hero } from '../hero';
 })
 export class HeroDetailComponent {
   @Input() hero?: Hero;
+  constructor() {
+    debugger;
+    console.log('hero', this.hero);
+  }
 }
