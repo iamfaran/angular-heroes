@@ -6,13 +6,17 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { HeroComponent } from './hero/hero.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-  declarations: [AppComponent, HeroesComponent, HeroComponent, HeroDetailComponent, MessagesComponent],
-  imports: [
-    BrowserModule,
-    FormsModule, // <-- import the FormsModule before binding with [(ngModel)]
+  declarations: [
+    AppComponent,
+    HeroesComponent,
+    HeroComponent,
+    HeroDetailComponent,
+    MessagesComponent,
   ],
+  imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
