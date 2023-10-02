@@ -15,6 +15,7 @@ export class HeroesComponent {
     private heroService: HeroService,
     private messageService: MessageService
   ) {
+    console.log('HEROE COMPONENT');
     console.log(this);
   }
   onHeroClick(hero: Hero): void {
