@@ -1,10 +1,12 @@
 <li class="hero-item">
-  <button (click)="onHeroClick(hero)" type="button">
-    <div class="badge">
-      <span>{{ hero.id }}</span>
-    </div>
-    <div class="name">
-      <span>{{ hero.name }}</span>
-    </div>
-  </button>
+  <a [routerLink]="['/detail', hero.id]">
+    <button (click)="onHeroClick(hero)" type="button">
+      <div class="badge">
+        <span>{{ hero.id }}</span>
+      </div>
+      <div class="name">
+        <span>{{ hero.name }}</span>
+      </div>
+    </button>
+  </a>
 </li>
